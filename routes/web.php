@@ -23,30 +23,30 @@ Route::get('/tweet', \App\Http\Controllers\Tweet\IndexController::class);
 
 
 // ここから先が使うやつ
-// 最初の画面
+// ①最初の画面
 Route::get('/index', \App\Http\Controllers\TopPage\IndexController::class);
-// ログイン画面
+// ②ログイン画面
 Route::get('/login', [\App\Http\Controllers\CommonController::class, 'page_user_login']);
-// 新規登録画面
+// ③新規登録画面
 Route::get('/register', [\App\Http\Controllers\CommonController::class, 'page_user_register']);
-// 新規登録メール確認画面
+// ④新規登録メール確認画面
 Route::get('/mail', [\App\Http\Controllers\CommonController::class, 'page_user_mail']);
-// 新規登録完了しましたよ画面
+// ⑤新規登録完了しましたよ画面
 Route::get('/registercomplete', [\App\Http\Controllers\CommonController::class, 'page_user_registercomplete']);
-// ログインした後のホーム画面
+// ⑥ログインした後のホーム画面
 Route::get('/home', [\App\Http\Controllers\CommonController::class, 'page_user_home']);
-// 投稿画面
+// ⑦投稿画面
 Route::get('/posting', [\App\Http\Controllers\CommonController::class, 'page_user_posting']);
-// 投稿画面一覧
+// ⑧投稿画面一覧
 Route::get('/messages', [\App\Http\Controllers\CommonController::class, 'page_user_messages']);
-// 棚一覧
+// ⑨棚一覧
 Route::get('/shelves', [\App\Http\Controllers\CommonController::class, 'page_user_shelves']);
-// ボトル新規登録
+// ➓ボトル新規登録
 Route::get('/newbottle', [\App\Http\Controllers\CommonController::class, 'page_user_newbottle']);
-// 登録したボトルの詳細
+// １１登録したボトルの詳細
 Route::get('/bottlelist', [\App\Http\Controllers\CommonController::class, 'page_user_bottlelist']);
-// 登録したボトルの編集
+// １２登録したボトルの編集
 Route::get('/bottleediting', [\App\Http\Controllers\CommonController::class, 'page_user_bottleediting']);
-// ボトルの編集の確認画面
+// １３ボトルの編集の確認画面
 Route::get('/editconfirmation', [\App\Http\Controllers\CommonController::class, 'page_user_editconfirmation']);
 

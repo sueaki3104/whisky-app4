@@ -11,6 +11,7 @@ class IndexController extends Controller
 
     public function __invoke(Request $request)
     {
+        // ①最初の画面
         return view('TopPage.index');
     }
 

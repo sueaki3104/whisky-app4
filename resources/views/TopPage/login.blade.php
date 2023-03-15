@@ -9,6 +9,12 @@
 </head>
 
 <body>
+    <!-- ②ログイン画面 login-->
+    <!-- ID（メアド）とPASSを入力する枠が必要 -->
+    <!-- login ボタンが必要 ⑥ home へ画面変遷
+        新規登録ボタンが必要 ③ register へ変遷-->
+
+
   <form action = "./whisky_8_login_act.php" method = "POST">
     <fieldset>
       <legend>ウィスキーラヴァーズログイン画面</legend>
@@ -22,6 +28,10 @@
       <div>
         <button>ログイン</button>
       </div>
+
+
+
+      <a href={{ url("home") }}>ホームへ</a>
       <a href={{ url("register") }}>新規登録はこちらから</a>
     </fieldset>
   </form>

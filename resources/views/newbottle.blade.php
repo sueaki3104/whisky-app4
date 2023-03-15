@@ -9,7 +9,15 @@
 </head>
 
 <body>
-      <a href={{ url("TopPage") }}>home</a>
+    <!-- ➓新規ボトル登録画面 newbottle-->
+    <!-- 必要なのは
+            入力できる枠で
+            １、ウィスキーの名前 ２、購入日 ３、購入場所 ４、買った値段 ５、思い出を書く
+            ６、写真データ 写真がなければno image
+            登録ボタンの実装（棚一覧へ変遷 ⑨ shelves
+            戻るボタン（棚一覧へ変遷 ⑨ shelves-->
+
+
     newbottle
 
 
@@ -44,6 +52,10 @@
         <div>
           <button>ウィスキーの登録</button>
         </div>
+
+         <a href={{ url("shelves")}}>登録</a>
+         <a href={{ url("shelves") }}>棚へ戻る</a>
+
       </fieldset>
   </form>
 

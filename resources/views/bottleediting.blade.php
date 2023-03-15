@@ -9,6 +9,14 @@
 </head>
 
 <body>
+    <!-- １２ボトル編集画面 bottleediting-->
+    <!-- 必要なのは
+            入力できる枠で あらかじめその枠にはDBから引っ張ってきたデータが入っている状態
+            １、ウィスキーの名前 ２、購入日 ３、購入場所 ４、買った値段 ５、思い出を書く
+            ６、写真データ 写真がなければno image
+            編集完了ボタンの実装（編集完了画面へ変遷 １３ editconfirmation ）
+            戻るボタン（ボトル詳細へ変遷 １１ bottlelist -->
+
       <a href={{ url("TopPage") }}>home</a>
     bottleediting
 
@@ -48,6 +56,12 @@
       </div>
     </fieldset>
   </form>
+
+
+
+      <a href={{ url("editconfirmation") }}>編集完了</a>
+      <a href={{ url("bottlelist") }}>１つ前へ戻る</a>
+
 
 </body>
 

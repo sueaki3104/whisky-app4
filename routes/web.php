@@ -49,4 +49,9 @@ Route::get('/bottlelist', [\App\Http\Controllers\CommonController::class, 'page_
 Route::get('/bottleediting', [\App\Http\Controllers\CommonController::class, 'page_user_bottleediting']);
 // １３ボトルの編集の確認画面
 Route::get('/editconfirmation', [\App\Http\Controllers\CommonController::class, 'page_user_editconfirmation']);
-
+// １４マイページ
+Route::get('/mypage', [\App\Http\Controllers\CommonController::class, 'page_user_mypage']);
+// １５マイページ編集画面
+Route::get('/mypageediting', [\App\Http\Controllers\CommonController::class, 'page_user_mypageediting']);
+// １６マイページの編集の確認画面
+Route::get('/mypageeditconfirmation', [\App\Http\Controllers\CommonController::class, 'page_user_mypageeditconfirmation']);

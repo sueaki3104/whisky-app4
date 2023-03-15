@@ -9,8 +9,16 @@
 </head>
 
 <body>
+    <!-- ⑤新規登録完了しましたよ画面 registercomplete-->
+    <!-- 必要なのはログインしたままのホームへボタン（ホーム画面 ⑥ home へ変遷） -->
+
+
+
       <a href={{ url("TopPage") }}>home</a>
     registercomplete
+
+    新規登録が完了しました
+      <a href={{ url("home") }}>ホームへ</a>
 
 </body>
 

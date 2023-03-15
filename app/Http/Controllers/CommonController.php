@@ -82,7 +82,23 @@ class CommonController extends Controller
 
 
 
+    // １４マイページ
+    public function page_user_mypage(Request $request)
+    {
+        return view('mypage');
+    }
 
+    // １５マイページ編集画面
+    public function page_user_mypageediting(Request $request)
+    {
+        return view('mypageediting');
+    }
+
+    // １６マイページの編集の確認画面
+    public function page_user_mypageeditconfirmation(Request $request)
+    {
+        return view('mypageeditconfirmation');
+    }
 
 
 
